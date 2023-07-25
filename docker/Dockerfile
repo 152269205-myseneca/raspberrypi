@@ -215,7 +215,7 @@ RUN apt -y install mariadb-server
 RUN echo "Replace VIPER.ENV"
 RUN git clone --depth 1 https://github.com/152269205-myseneca/raspberrypi.git
 
-RUN chmod -R +x raspberrypi
+RUN chmod -R +x raspberrypigit 
 
 RUN cp -rf raspberrypi/viper-env-file/viper.env Viper-produce/viper.env
 RUN cp -rf raspberrypi/viper-env-file/viper.env Viper-preprocess/viper.env
